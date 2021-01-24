@@ -4,11 +4,8 @@
 * **Restrictions** - Ensure positive and negative unit tests exist per feature of the application
 
 
-
 ## Part 1; Create class `Student`
 * Create a class `Student`.
-
-<br><br><br><br><br>
 
 ### Part 1.1; Defining instance variables
 * Declare an instance variable for each of the previously mentioned properties:
@@ -19,7 +16,6 @@
 	* `ArrayList<Double> examScores`
 		* a dynamic collection of decimal values representative of test scores.
 
-<br><br><br><br><br>
 
 ### Part 1.2; Defining construction
 * Define a `Student` constructor whose parameters are used to initalize its instance variables.
@@ -29,7 +25,6 @@
 	* `Double[]` representative of a collection of `testScores`
 
 
-<br><br><br><br><br>
 
 ### Part 1.3; Defining methods
 
@@ -38,7 +33,6 @@
 		* **Note:** There should not be a `setter` for the `testScore`. This object's [state](https://cs.stackexchange.com/questions/6536/definition-of-the-state-of-an-object-in-oop) will be [mutated](https://en.wikibooks.org/wiki/Scheme_Programming/Mutability) via a `takeExam` method mentioned below.
 		* Additionally, define a getter, `getNumberOfExamsTaken()`, which returns the total number of exams taken by this student.
 
-<br><br><br><br><br>
 
 * **Define method `getExamScores()`**
 	* `Student` should define a method which returns a string representation of all exams taken.
@@ -69,8 +63,6 @@
 			```
 
 
-<br><br><br><br><br>
-
 * **Define method `addExamScore(double examScore)`**
 	* `Student` should define a method named `addExamScore` which uses a `double` parameter to add an `examScore` to its composite List `examScores`.
 
@@ -97,7 +89,6 @@
 				Exam 1 -> 100
 			```
 
-<br><br><br><br><br>
 
 * **Define method `setExamScore(int examNumber, double newScore)`**
 	* `Student` should define a method named `setExamScore` which uses an `int` parameter to identify an exam in the list, and a `double` parameter to re-assign the respective value.
@@ -125,8 +116,6 @@
 				Exam 1 -> 150
 			```
  
-<br><br><br><br><br>
-
 * **Define method `getAverageExamScore()`**
 	* `Student` should define a method named `getAverageExamScore()` which returns the sum of the `examScore` list divided by its `size`.
 
@@ -152,8 +141,6 @@
 			125.0
 			```
 			
-
-<br><br><br><br><br>
 
 * **Define method `toString()`**
 	* `Student` should [override](https://docs.oracle.com/javase/tutorial/java/IandI/override.html) the `toString` method by returning a clean `String` representation of the person.
@@ -185,10 +172,6 @@
 			    Exam 3 -> 250
 			    Exam 4 -> 0
 			```
-									
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
 
 ## Part 2; Create class `Classroom`
 * Create a class `Classroom`
@@ -200,7 +183,6 @@
 	* `Student[] students`
 		* a collection of student objects
 
-<br><br><br><br><br>
 
 ### Part 2.2; Defining construction
 * Define a `Classroom` constructor whose parameters are used to initalize its instance variable. The class `Classroom` should support 3 different ways of being constructed.
@@ -211,14 +193,12 @@
 	
 	3. The class `Classroom` should define a [nullary constructor](https://en.wikipedia.org/wiki/Nullary_constructor) which initializes the composite `students` object to be an empty array of 30 `Student` objects.
 
-<br><br><br><br><br>
 
 ### Part 2.3; Defining methods
 
 * **Define method `getStudents()`**
 	* Define a getter which returns the composite `students` object.	
 
-<br><br><br><br><br>
 
 * **Define method `getAverageExamScore()`**
 	* Define a getter which returns the sum of all exam averages divided by the number of students.
@@ -248,7 +228,6 @@
 			```
 			125.0
 			```
-<br><br><br><br><br>
 
 * **Define method `addStudent(Student student)`**
 	* Define a method which uses a `Student` parameter to add a `Student` object to the composite `students` list.
@@ -292,21 +271,15 @@
 			    Exam 4 -> 0]
 			```
 
-<br><br><br><br><br>
 
 * **Define method `removeStudent(String firstName, String lastName)`**
 	* The class `Classroom` should define a method which uses a `firstName` and `lastName` parameter to identify and remove the respective student from composite `students` object.
 	* Ensure the array is re-ordered after the removal; Null values should be located in the final indices of the array.
 
 
-<br><br><br><br><br>
-
 * **Define method `getStudentsByScore()`**
 	* The class `Classroom` should define a method `getStudentsByScore()` which returns an array representation of `Student` objects sorted in descending order by score. 
 	* If two students have the same class average, order them lexigraphically.
-
-
-<br><br><br><br><br>
 
 * **Define method `getGradeBook()`**
 	* The class `Classroom` should define a method `getGradeBook()` which returns a mapping of `Student` objects to a respective letter grade determined by creating a [grading curve](https://en.wikipedia.org/wiki/Grading_on_a_curve) such that
